@@ -97,7 +97,7 @@ header nav.menu-desktop ul li{
 
 .openbutton i{
     color: white;
-    font-size: 40px;
+    font-size: 0px;
 }
 
 
@@ -757,7 +757,10 @@ footer .rodapeemail p a{
         height: 100%;
     }
 
-
+    .openbutton i{
+        color: white;
+        font-size: 40px;
+    }
 
 }
 
