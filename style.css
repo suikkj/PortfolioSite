@@ -1,0 +1,772 @@
+/* Mudança Geral */
+*{
+    margin:  0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+body{
+    background-color: rgb(255, 208, 0);
+    height: 90vh;
+}
+
+.interface{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* H2 Minhas Linguagens */
+h2.titulo{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2.titulo span{
+    color:rgb(162, 0, 255);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* Cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:rgb(255, 255, 255);
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 60px;
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+
+/* Estilo Menu Mobile */
+.menu-mobile{
+    background-color: rgb(255, 208, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.Abrir-Menu{
+    width: 70%;
+}
+
+.menu-mobile.Abrir-Menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.openbutton i{
+    color: white;
+    font-size: 0px;
+}
+
+
+.menu-mobile .closebutton{
+    padding: 20px 4%;
+}
+
+
+.menu-mobile .closebutton i{
+    color:white;
+    font-size: 35px;
+}
+
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 20px 6%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:  rgb(162, 0, 255);
+
+}
+
+.overlay-menu{
+    background-color: rgba(255, 208, 0, 0.363);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+header .buttomcontato button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(55, 141, 253);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .buttomcontato button:hover{
+    box-shadow: 0px 0px 25px #497fb1;
+}
+
+/* Corpo do site - Topo */
+
+section.começo-site{
+    padding: 40px 4%;
+}
+
+section.começo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.começo-site .txt-começo-site h1{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    line-height: 40px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.começo-site .txt-começo-site h1 span{
+    color:rgb(162, 0, 255);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.começo-site .txt-começo-site p{
+    color: rgb(0, 0, 0);
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.buttomcomeço button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buttomcomeço button:hover{
+    box-shadow: 0px 0px 25px white;
+    transform: scale(1.05);
+}
+
+.img-começo-site img{
+    border-radius: 25px;
+    transition: .2s;
+}
+
+.img-começo-site img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px white;
+}
+
+/* Estilo Linguagens */
+section.linguagens{
+    padding: 40px 4%;
+}
+
+section.linguagens .flex{
+    gap: 60px;
+}
+
+.linguagens .linguagens-caixa{
+    color: black;
+    padding: 40px;
+    border: 2px solid rgb(117, 0, 185);
+    border-radius: 35px;
+    margin-top: 35px;
+    transition: .2s;
+}
+
+.linguagens .linguagens-caixa:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px black;
+}
+.linguagens .linguagens-caixa i{
+    font-size: 80px;
+    color: rgb(117, 0, 185);
+}
+
+.linguagens .linguagens-caixa h3{
+    font-size: 30px;
+    margin: 15px 0;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.linguagens .linguagens-caixa p{
+    font-size: 15px;
+}
+
+
+
+/* Estilo Sobre */
+
+section.Sobre{
+    padding: 150px 4%;
+    box-shadow: 0 0 100px white;
+}
+
+section.Sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre{
+    color:black;
+}
+
+.Sobre .txt-sobre h2{
+    font-size: 45px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.Sobre .txt-sobre h2 span{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color:rgb(117, 0, 185);
+}
+
+.Sobre .txt-sobre p{
+    font-size: 16.5px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.discordbuttom button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(130,140,244);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color:white;
+}
+
+.discordbuttom button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px white;
+}
+
+.twitterbuttom button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: black;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 10px;
+    color:white;    
+}
+
+.twitterbuttom button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px white;
+}
+
+.img-sobre img{
+    width: 450px;
+    height: 450px;
+    background-color: rgb(117, 0, 185);
+    border-radius: 35px;
+    transition: .2s;
+    position: relative;
+    background-size: cover;
+    background-position: 100% 0%;
+}
+
+.img-sobre img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px black;
+}
+
+/* Portfolio */
+
+section.Portfolio{
+    padding: 80px 4%;
+}
+
+section.Portfolio .flex{
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.Projeto{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 45px;
+}
+
+.Projeto span{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(117, 0, 185)
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(117, 0, 185);
+    border-radius: 35px;
+    transition: .2s;
+    position: relative;
+    background-size: cover;
+    background-position: 100% 0%;
+}
+
+.img-port:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px white;
+    cursor:pointer;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.527);
+    color:white;
+    opacity: 0;
+    transition: .5s ;
+    margin-bottom: 80px;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Fale Comigo */
+
+section.falecomigo{
+    padding: 60px 4%;
+}
+
+.inteiração{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 45px;
+}
+
+.inteiração span{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgb(117, 0, 185);
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.452);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color:black;
+    font-size: 20px;
+}
+
+form input::placeholder{
+    color:rgb(85, 85, 85)
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+    
+}
+
+form .sendbutton{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .sendbutton input{
+    width: 120px;
+    background-color: rgb(117, 0, 185);
+    color: white;
+    font-weight: 700;
+    cursor:pointer;
+    transition: .2s;
+
+}
+
+form .sendbutton input:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 32px white;
+
+}
+
+/* Rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 32px white;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .Rodape{
+    padding: 20px 0;
+}
+
+footer .rodapeemail p i{
+    color: white;
+    font-size:20px;
+    align-items: center;
+}
+
+footer .rodapeemail p a{
+    color:black;
+    font-size: 15px;
+}
+
+
+
+
+.githubbutton{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 0 5px;
+    color:black;   
+
+}
+
+.githubbutton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px white;
+}
+
+.discordbutton{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    background: rgb(130,140,244);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 0 5px;
+    color:white;   
+}
+
+.discordbutton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 32px white;
+}
+
+.twitterbutton{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    background: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 0 5px;
+    color: white;   
+}
+
+.twitterbutton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 32px white;
+}
+
+.linkedinbutton{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    background: rgb(55, 141, 253);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 0 5px;
+    color: white;  
+}
+
+.linkedinbutton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 32px white;
+}
+
+/* Conversão de tamanho */
+
+@media screen and (max-width: 1200px) {
+    /* Gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 35px;
+        text-align: center;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 35px;
+    }
+
+
+    /* Cabeçalho */
+    .menu-desktop, .buttomcontato{
+        display: none;
+    }
+
+    /* Projetos */
+    .img-port{
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position: 100% 0%;
+    }
+
+
+    
+    .começo-site .txt-começo-site h1{
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        line-height: 40px;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .começo-site .txt-começo-site h1 span{
+        color:rgb(162, 0, 255);
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .começo-site .txt-começo-site p{
+        color: rgb(0, 0, 0);
+        margin: 40px 0px;
+        margin-bottom: 100px;
+        font-size: 15px;
+    }
+
+    .img-começo-site img{
+        width: 0%;
+    }
+
+
+
+
+    /* Sobre */
+
+    .Sobre .txt-sobre h2{
+        font-size: 35px;
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 25px;
+    }
+    
+    .Sobre .txt-sobre h2 span{
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+        color:rgb(117, 0, 185);
+
+    }
+
+    .img-sobre img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: rgb(117, 0, 185);
+        border-radius: 35px;
+        transition: .2s;
+        position: relative;
+        background-size: cover;
+        background-position: 100% 0%;
+    }
+
+    section.Sobre{
+        padding: 80px 4%;
+        box-shadow: 0 0 100px white;
+    }
+
+
+    .Sobre .txt-sobre p{
+        font-size: 15px;
+        margin-bottom: 15px 0;
+        text-align: justify;
+    }
+
+    .inteiração{
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 35px;
+        margin: 40px 4%;
+    }
+
+    form input, form textarea{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.452);
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    form textarea{
+        resize: none;
+        max-height: 400px;
+        
+    }
+
+    .Projeto{
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    section.Portfolio{
+        padding: 40px 4%;
+    }
+
+
+    .img-port{
+        width: 360px;
+        height: 460px;
+        margin: 20px auto;
+        background-color: rgb(117, 0, 185);
+        border-radius: 35px;
+        transition: .2s;
+        position: relative;
+        background-size: cover;
+        background-position: 100% 0%;
+
+
+    }
+
+    footer .flex{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .Rodape{
+        text-align: center;
+    }
+
+    .imagem-logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .openbutton i{
+        color: white;
+        font-size: 40px;
+    }
+
+}
+
+
+
+
+
+
+
