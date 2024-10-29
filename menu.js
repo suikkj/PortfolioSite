@@ -15,3 +15,31 @@ overlay.addEventListener('click', ()=>{
     Menu.classList.remove('Abrir-Menu')
 
 })
+
+
+const UpButton = document.
+querySelector('.upbutton');
+
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight(){
+    if(window.scrollY > 200 ){
+        UpButton.style.display = "flex"
+    } else{
+        UpButton.style.display = "none"
+    }
+}
+
+UpButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+
+
+
+
+
+
+
+})

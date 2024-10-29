@@ -73,6 +73,34 @@ header nav.menu-desktop ul li{
     
 }
 
+.upbutton{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 48px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: .2s;
+    border: none;
+    display: none;
+}
+
+.upbutton i{
+    font-size: 50px;
+    color: rgb(162, 0, 255);
+
+}
+
+.upbutton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 64px white;
+}
+
 /* Estilo Menu Mobile */
 .menu-mobile{
     background-color: rgb(255, 208, 0);
@@ -793,6 +821,40 @@ footer .rodapeemail p a{
     .openbutton i{
         color: white;
         font-size: 40px;
+    }
+
+    .upbutton{
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 48px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        transition: .2s;
+        border: none;
+        display: none;
+        transition: .5s;
+    }
+    
+    .upbutton i{
+        font-size: 50px;
+        color: rgb(162, 0, 255);
+    
+    }
+    
+    .upbutton:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 64px white;
+        z-index: 7777;
+    }
+
+    .img{
+        z-index: 6666;
     }
 
 }
