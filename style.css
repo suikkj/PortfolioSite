@@ -371,12 +371,14 @@ section.Portfolio .flex{
 .img-port{
     width: 360px;
     height: 460px;
-    background-color: rgb(117, 0, 185);
     border-radius: 35px;
+    background-image: url(images/Portfólio\ Github.png);
+    border: 5px black;
     transition: .2s;
     position: relative;
     background-size: cover;
     background-position: 100% 0%;
+    align-items: center;
 }
 
 .img-port:hover{
@@ -405,6 +407,38 @@ section.Portfolio .flex{
 }
 
 .overlay:hover{
+    opacity: 1;
+}
+
+.overlay .botaoa{
+    width: 360px;
+    height: 460px;
+    background-image: url(images/Cathy\'s\ Photo\ -\ Portfólio.jpg);
+    border: 5px 0 black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    color:white;
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    transition: .5s ;
+    position: relative;
+    background-size: cover;
+    background-position: 100% 0%;
+
+    
+}
+
+.overlay .botaoa:hover{
     opacity: 1;
 }
 
