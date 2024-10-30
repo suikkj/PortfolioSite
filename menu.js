@@ -35,11 +35,4 @@ UpButton.addEventListener('click', () => {
         top: 0,
         behavior: "smooth"
     })
-
-
-
-
-
-
-
 })

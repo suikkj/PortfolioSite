@@ -101,6 +101,19 @@ header nav.menu-desktop ul li{
     box-shadow: 0 0 64px white;
 }
 
+.buttomcontato select{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+    
+
 /* Estilo Menu Mobile */
 .menu-mobile{
     background-color: rgb(255, 208, 0);
