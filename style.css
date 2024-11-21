@@ -260,8 +260,12 @@ section.linguagens{
 }
 
 section.linguagens .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 60px;
 }
+
 
 .linguagens .linguagens-caixa{
     color: black;
@@ -270,6 +274,8 @@ section.linguagens .flex{
     border-radius: 35px;
     margin-top: 35px;
     transition: .2s;
+    flex: 1 1 calc(33.333% - 60px); 
+    box-sizing: border-box;
 }
 
 .linguagens .linguagens-caixa:hover{
@@ -292,6 +298,9 @@ section.linguagens .flex{
 .linguagens .linguagens-caixa p{
     font-size: 15px;
 }
+
+
+
 
 
 
